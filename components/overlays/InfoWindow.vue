@@ -96,7 +96,7 @@ export default {
       this.originInstance.redraw()
     },
     load () {
-      const {BMap, map, show, title, width, height, maxWidth, offset, autoPan, closeOnClick, message, maximize, bindObserver, $parent} = this
+      const {BMap, map, show, title, width, height, maxWidth, offset, autoPan, closeOnClick, message, maximize/*, bindObserver */, $parent} = this
       const $content = this.$el
       const overlay = new BMap.InfoWindow($content, {
         width,
