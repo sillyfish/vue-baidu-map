@@ -53,18 +53,23 @@ export default {
       val ? this.openInfoWindow() : this.closeInfoWindow()
     },
     'position.lng' (val, oldVal) {
+      console.log('position.lng reload')
       this.reload()
     },
     'position.lat' (val, oldVal) {
+      console.log('position.lat reload')
       this.reload()
     },
     'offset.width' (val, oldVal) {
+      console.log('offset.width reload')
       this.reload()
     },
     'offset.height' (val) {
+      console.log('offset.height reload')
       this.reload()
     },
     maxWidth () {
+      console.log('maxWidth reload')
       this.reload()
     },
     width (val) {
@@ -112,7 +117,7 @@ export default {
       ;[].forEach.call($content.querySelectorAll('img'), $img => {
         $img.onload = () => overlay.redraw()
       })
-      bindObserver()
+      // bindObserver()
       this.$container = $parent.originInstance && $parent.originInstance.openInfoWindow ? $parent.originInstance : map
       show && this.openInfoWindow()
     },
