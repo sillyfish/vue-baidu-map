@@ -38,6 +38,8 @@ jspm_packages
 
 # docs
 dist
+.idea
+package-lock.json
 
 # coverage
 coverage
